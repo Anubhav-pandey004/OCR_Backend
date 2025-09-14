@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
+    "corsheaders.middleware.CorsMiddleware",   # must be first
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -55,7 +55,7 @@ MIDDLEWARE = [
 ALLOWED_HOSTS = ["*"] 
 CORS_ALLOWED_ORIGINS = [
     "https://food-pharma.netlify.app",
-    "http://localhost:5173"
+    "http://localhost:5173",   # local dev
 ]
 
 CORS_ALLOW_CREDENTIALS = True
