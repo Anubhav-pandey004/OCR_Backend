@@ -8,5 +8,7 @@
     ],
     "routes": [
         { "src": "/(.*)", "dest": "ocr_backend/wsgi.py" }
-    ]
+    ],
+
+   "buildCommand": "pip install --only-binary=:all: -r requirements.txt"
 }
