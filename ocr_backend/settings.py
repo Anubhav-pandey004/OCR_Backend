@@ -53,10 +53,12 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
-CORS_ALLOWED_ORIGINS = [
-    "https://food-pharma.netlify.app",
-    "http://localhost:5173",  # for local dev
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "https://food-pharma.netlify.app",
+#     "http://localhost:5173",  # for local dev
+# ]
+CORS_ALLOW_ALL_ORIGINS = True
+
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOW_HEADERS = [
