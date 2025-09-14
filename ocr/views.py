@@ -8,9 +8,12 @@ import pytesseract
 
 pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
 class OCRView(APIView):
+    print(APIView)
+    
     parser_classes = [JSONParser]
 
     def post(self, request):
+        print(request)
         try:
             # Get base64 image from request
             image_data = request.data['image']
