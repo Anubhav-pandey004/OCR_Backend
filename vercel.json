@@ -1,0 +1,12 @@
+{
+    "builds": [
+        {
+            "src": "ocr_backend/wsgi.py",
+            "use": "@vercel/python",
+            "config": { "maxLambdaSize": "15mb" , "runtime": "python3.10.13" }
+        }
+    ],
+    "routes": [
+        { "src": "/(.*)", "dest": "ocr_backend/wsgi.py" }
+    ]
+}
