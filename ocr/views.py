@@ -6,7 +6,6 @@ import cv2
 import numpy as np
 import pytesseract
 
-pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
 class OCRView(APIView):
     print(APIView)
     
