@@ -23,10 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-#wq+@1b&%v@+g38tzrj8h+$-@$6kx7-vpo-21&7mp%#ulg675o"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ["ocr-backend-1-3py5.onrender.com", "localhost", "127.0.0.1"]
 
 # Application definition
 
@@ -52,8 +51,10 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
-ALLOWED_HOSTS = ["*"] 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "https://food-pharma.netlify.app",
+    "http://localhost:5173",  # for local dev
+]
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOW_HEADERS = [
