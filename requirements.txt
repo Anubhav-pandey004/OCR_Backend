@@ -1,11 +1,8 @@
 Django==5.2.3
 djangorestframework==3.16.0
 django-cors-headers==4.7.0
-gunicorn==23.0.0
-easyocr==1.7.2
+pytesseract==0.3.13
 opencv-python-headless==4.11.0.86
-numpy==2.2.4
 pillow==11.1.0
-python-bidi==0.6.6
-shapely==2.1.1
-PyYAML==6.0.2
+numpy==2.2.4
+gunicorn==23.0.0
