@@ -17,7 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path , include
 
+def home(request):
+    return HttpResponse("Welcome to my portfolio! Follow the link: https://anubhavpandey.netlify.app/")
+
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('api/', include('ocr.urls')),
+    path("api/", include("ocr.urls")),
+    path("", home),  # 👈 root URL route
 ]
